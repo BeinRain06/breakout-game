@@ -1,12 +1,16 @@
 {
   "name": "breakout-game",
   "version": "1.0.0",
+  "repository": {
+    "url": "githttps://github.com/BeinRain06/breakout-game.git"
+  },
   "description": "break bricks game with a ball ",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Gerard",
   "license": "ISC",
